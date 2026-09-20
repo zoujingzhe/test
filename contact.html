@@ -3,26 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聯絡我們 - 我的多頁面網站</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f7f6; color: #333; line-height: 1.6; }
-        header { background: #333; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 20px; font-weight: bold; }
-        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
-        nav a:hover, nav a.active { color: #1abc9c; }
-        .container { max-width: 800px; margin: 50px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        h1 { color: #2c3e50; }
-        footer { text-align: center; padding: 20px; color: #777; font-size: 14px; }
-        /* 表單簡單樣式 */
-        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        button { background: #1abc9c; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
-        button:hover { background: #16a085; }
-    </style>
+    <title>聯絡我們 - 網頁 6.0 工程版</title>
+    <!-- 引入全站共用 CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">多頁面站點 5.0</div>
+        <div class="logo">🚀 Project 6.0</div>
         <nav>
             <a href="index.html">首頁</a>
             <a href="about.html">關於我們</a>
@@ -30,19 +18,27 @@
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container" style="max-width: 600px;"> <!-- 縮小表單容器寬度，視覺更集中 -->
         <h1>✉️ 聯絡我們</h1>
-        <p>填寫下方表單與我們取得聯絡。目前你正在閱讀的是 <strong>contact.html</strong>。</p>
-        <form onsubmit="alert('訊息已送出！'); return false;">
-            <label>電子郵件：</label>
-            <input type="email" required placeholder="請輸入您的 Email">
-            <label>您的留言：</label>
-            <textarea rows="4" required placeholder="請輸入留言內容"></textarea>
-            <button type="submit">送出</button>
+        <p style="margin-bottom: 30px;">如果您有任何合作意向或技術疑問，請填寫下方表單，我們將儘快回覆您。</p>
+        
+        <!-- 表單主體 -->
+        <form onsubmit="alert('🎉 訊息已透過 6.0 系統模擬送出！'); this.reset(); return false;">
+            <div class="form-group">
+                <label for="email">電子郵件地址</label>
+                <input type="email" id="email" required placeholder="example@email.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">您想說的話</label>
+                <textarea id="message" rows="5" required placeholder="請輸入您的留言內容..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">提交表單</button>
         </form>
     </div>
 
-    <footer>&copy; 2026 多頁面網站範例.</footer>
+    <footer>&copy; 2026 外部樣式架構模組.</footer>
 
 </body>
 </html>
