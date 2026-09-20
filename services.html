@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服務項目 - 網頁 8.0 擴充版</title>
+    <!-- 引入全站共用 CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 僅針對此頁面微調的局部樣式：服務列表 */
+        .service-list {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .service-item {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #1abc9c;
+        }
+        @media (max-width: 600px) {
+            .service-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🚀 Project 8.0</div>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="services.html" class="active">服務項目</a>
+            <a href="about.html">關於我們</a>
+            <a href="contact.html">聯絡我們</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>🛠️ 我們的服務項目</h1>
+        <p>歡迎來到全新擴充的頁面！我們利用外部樣式表，不需要重新設計就能直接擁有精美的外觀。</p>
+        
+        <div class="service-list">
+            <div class="service-item">
+                <h3>🌐 響應式網頁設計</h3>
+                <p>打造自動適應手機、平版與電腦螢幕的現代化網站。</p>
+            </div>
+            <div class="service-item">
+                <h3>⚡ 前端效能優化</h3>
+                <p>抽取外部 CSS 與 JavaScript，提升網頁在雲端載入的速度。</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; 2026 外部樣式架構模組.</footer>
+
+</body>
+</html>
