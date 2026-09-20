@@ -3,23 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關於我們 - 我的多頁面網站</title>
-    <style>
-        /* 保持與首頁相同的樣式 */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f7f6; color: #333; line-height: 1.6; }
-        header { background: #333; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 20px; font-weight: bold; }
-        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
-        nav a:hover, nav a.active { color: #1abc9c; }
-        .container { max-width: 800px; margin: 50px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        h1 { color: #2c3e50; }
-        footer { text-align: center; padding: 20px; color: #777; font-size: 14px; }
-    </style>
+    <title>關於我們 - 網頁 7.0 雲端版</title>
+    <!-- 引入外部共用 CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">多頁面站點 5.0</div>
+        <div class="logo">🚀 Cloud Project 7.0</div>
         <nav>
             <a href="index.html">首頁</a>
             <a href="about.html" class="active">關於我們</a>
@@ -28,12 +19,12 @@
     </header>
 
     <div class="container">
-        <h1>👥 關於我們團隊</h1>
-        <p>我們致力於提供最優質的前端開發網頁範本。透過拆分多個 HTML 頁面，可以讓大型網站的內容更有條理、更利於 Google 搜尋引擎優化（SEO）。</p>
-        <p>目前你正在閱讀的是 <strong>about.html</strong>。</p>
+        <h1>👥 關於我們的技術架構</h1>
+        <p>將網頁部署到 <strong>GitHub Pages</strong> 後，最大的優勢在於：</p>
+        <p>因為我們使用了相道路徑 <code>href="about.html"</code>，所以當你把這 4 個檔案上傳到雲端後，伺服器依然能夠精準識別並完成跨頁面跳轉，絕對不會出現網頁失效（404）的問題。</p>
     </div>
 
-    <footer>&copy; 2026 多頁面網站範例.</footer>
+    <footer>&copy; 2026 雲端部署版權所有.</footer>
 
 </body>
 </html>
